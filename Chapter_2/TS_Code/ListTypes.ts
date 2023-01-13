@@ -24,3 +24,23 @@ let TypeVoid: void; //отсутствие значения
 
 //========================
 
+function getName(name): string | null { //возвращает string либо null
+    return name;
+}
+
+const logger = () => { //never - возвращает значение, но работает без перерывно
+    while (true) {
+        console.log("The server is running")
+    }
+}
+
+function logError(errorMessages: string): void { //void - не возвращает значение, завершает своё выполнение
+    console.error(errorMessages);
+}
+
+//========================
+
+let name1 = "Artem"; //Объявляет и иницилизирует переменную без явной анотации
+let name2: string = "Artem"; //Объявляет и иницилизирует переменную c анотации типа
+
+
