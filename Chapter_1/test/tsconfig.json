@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../TS_Code",
+    "outDir": "dist",
+    "noEmitOnError": true,
+    "target": "es5"
+  }
+}
